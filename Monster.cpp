@@ -57,7 +57,7 @@ CMonster * CMonster::Clone()
 void CMonster::Save(CFileStream * pFile)
 {
 	CCharacter::Save(pFile);
-
+	
 	pFile->Write(&m_iGoldMin, 4);
 	pFile->Write(&m_iGoldMax, 4);
 	pFile->Write(&m_eStageType, 4);
